@@ -141,77 +141,97 @@
 % \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
 % \end{tabularx}
 
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Conor Hayes} \\[7.5pt]
+\href{https://github.com/cwoodhayes}{\raisebox{-0.05\height}\faGithub\ cwoodhayes} \ $|$ \ 
+\href{https://linkedin.com/in/cwoodhayes}{\raisebox{-0.05\height}\faLinkedin\ cwoodhayes} \ $|$ \ 
+\href{https://cwhayes.squarespace.com}{\raisebox{-0.05\height}\faGlobe\ cwhayes.squarespace.com} \ $|$ \ 
+\href{mailto:cwoodhayes@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ cwoodhayes@gmail.com} \ $|$ \
+Chicago, IL (willing to relocate) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+%	SUMMARY
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
 \section{Summary}
-This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+Creative engineering leader building across the full stack of robotics, from AI/ML algorithms to firmware to cloud software. Experienced in embedded systems, robotics software, and full-stack cloud infrastructure. Passionate about developing reliable, human-centered robotic systems.
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{Embedded \& Robotics} & Embedded systems, IoT, real-time firmware (ARM Cortex-M, NRF5x, Zephyr, Arduino), ROS2, Linux, computer vision \\
+\textbf{Software Engineering} & Cloud and backend development on AWS (ECS, EC2, S3, RDS), CI/CD, containerization with Docker, DevOps pipelines \\
+\textbf{Programming Languages} & C, Python, C++, Rust, SQL, TypeScript, Matlab, Java \\
+\textbf{Tools} & Git, VS Code, Jenkins, MATLAB, OpenCV, NumPy, Pandas \\
+\textbf{Leadership} & Technical architecture, team management, deep-tech product development, and interdisciplinary collaboration \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	ENGINEERING EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{joblong}{Consultant — Conor Hayes Software Consulting}{2023 -- Present}
+\item Provide technical expertise and product development guidance for deep-tech hardware/software companies.
+\item Led architecture and implementation of a reusable hardware testing framework now powering two \$500k test racks for space and fusion clients.
+\item Designed database schema and AWS cloud architecture for a digital-twin battery testing system in satellite assembly.
+\item Delivered computer vision support for an autonomous car refueling robot.
+\item For \textbf{Wesper}: Redesigned BLE streaming protocol for an NRF52-based sleep sensor (8× bandwidth increase) and migrated backend to CI/CD with containerized AWS deployment.
+\item Led R\&D on IMU/EMG-based deep learning system for human body pose estimation for both academic and commercial use.
+\end{joblong}
+
+\begin{joblong}{Software Engineer — Wesper}{2020 -- 2022, New York City}
+\item Led development of device firmware, backend, and cloud infrastructure for an FDA-approved “sleep lab at home” product.
+\item Scaled system from 8-person prototype team to 23-person production team serving 1000+ patients monthly.
+\item Tech stack: Python, C, NRF52, AWS (EC2, S3, RDS), BLE (C/JS), Matlab, Jenkins.
+\end{joblong}
+
+\begin{joblong}{Software \& Electrical Engineering Intern — Honeybee Robotics}{May -- Aug 2018, Pasadena, CA}
+\item Built middleware and electronics for robotic assemblies.
+\item Developed hardware drivers, GUIs, and control algorithms for an internal ROS-like testing framework.
+\end{joblong}
+
+\begin{joblong}{Flight Electronics Intern — NASA Jet Propulsion Laboratory}{Jan -- Aug 2017, Pasadena, CA}
+\item Developed the hardware and software test suite for the first deep-space-capable cubesat C\&DH board (Sphinx).
+\item Credited as inventor on NASA Copyright of Invention NPO 51462-CP.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2015 -- 2019 & \textbf{University of Southern California}, B.S. in Computer Engineering \& Computer Science \hfill GPA: 3.82 (Magna Cum Laude) \\
+& Minors: Chinese for the Professions, Engineering Honors, Thematic Option (Honors in Liberal Arts) \\
+& Avionics Lead, USC Rocket Propulsion Lab — Co-led first undergraduate team to launch a rocket to space (Traveler IV). \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Awards}
+\begin{itemize}[nosep, leftmargin=1em, itemsep=3pt, label=--]
+\item AIAA Achievement Award for contributions to USC’s Traveler IV rocket project.
+\item National Academy of Engineering Grand Challenges Scholar (1 of 40 nationwide).
+\item USC Renaissance Scholar (0.9\% of graduating class).
+\item USC Trustee Scholar (4-year, half-tuition merit scholarship; one of 100 awarded).
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS / MUSIC
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Independent Music Career} &  \normalsize{Released original indie rock under artist name “Wise John.” Accumulated 700,000+ Spotify streams. Sold out 170-capacity show at NYC’s Mercury Lounge (2024). Developing follow-up album in 2025.} \\
 \end{tabularx}
 
 \vfill
 \center{\footnotesize Last updated: \today}
+
 
 \end{document}
