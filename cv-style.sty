@@ -21,6 +21,7 @@
 \usepackage{fontawesome5}
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 \usepackage[unicode, draft=false]{hyperref}
+\usepackage{setspace} % for line spacing adjustments
 
 %----------------------------------------------------------------------------------------
 % COLOR AND HYPERREF
@@ -31,35 +32,74 @@
 \setlength\bibitemsep{1em}
 
 %----------------------------------------------------------------------------------------
-% CUSTOM SECTION FORMATTING
+% FONTS (LOCAL, wildcard approach)
 %----------------------------------------------------------------------------------------
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+
+% --- Body font: Source Sans Pro ---
+\setmainfont[
+  Path = fonts/source-sans-pro/,
+  UprightFont = *-Regular,
+  BoldFont = *-Semibold,
+  ItalicFont = *-It
+]{SourceSansPro}
+
+% --- Heading font: Montserrat ---
+\newfontfamily\headingfont[
+  Path = fonts/Montserrat/static/,
+  UprightFont = *-SemiBold,
+  BoldFont = *-Bold,
+  ItalicFont = *-SemiBoldItalic,
+  Scale = 1.05
+]{Montserrat}
+
+% --- Command for name font ---
+\newcommand{\namefont}{\headingfont\fontsize{28pt}{32pt}\selectfont}
+%----------------------------------------------------------------------------------------
+% SPACING & DESIGN ADJUSTMENTS
+%----------------------------------------------------------------------------------------
+
+% Slightly tighter line spacing for body text
+\setstretch{1.05}
+
+% Section title style
+\titleformat{\section}
+  {\Large\scshape\color{linkcolour}\headingfont\raggedright}
+  {}{0em}{}[{\color{linkcolour}\titlerule}]
+\titlespacing{\section}{0pt}{12pt plus 2pt minus 2pt}{8pt plus 2pt minus 2pt}
+
+% Itemize style for job descriptions
+\setlist[itemize]{nosep, after=\strut, leftmargin=1.2em, itemsep=2pt, label=--}
+
+% Paragraph spacing
+\setlength{\parskip}{0.5em} % small spacing between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indent
 
 %----------------------------------------------------------------------------------------
 % CUSTOM ENVIRONMENTS
 %----------------------------------------------------------------------------------------
 \newenvironment{jobshort}[2]
-    {
+{
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \textbf{#1} & \hfill &  #2 \\[3pt]
     \end{tabularx}
-    }
-    {
-    }
+}
+{
+}
 
 \newenvironment{joblong}[2]
-    {
+{
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \textbf{#1} & \hfill &  #2 \\[3pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
+    \begin{itemize}
+}
+{
     \end{itemize}
     \end{minipage}    
-    }
+}
 
 %----------------------------------------------------------------------------------------
 % CUSTOM COLUMN TYPE
