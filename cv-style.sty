@@ -1,0 +1,69 @@
+%-------------------------------------------------------------------
+% Custom CV style file
+%-------------------------------------------------------------------
+\ProvidesPackage{cv-style}[2025/10/14 Custom style for CV]
+
+%----------------------------------------------------------------------------------------
+% PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{fontawesome5}
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+
+%----------------------------------------------------------------------------------------
+% COLOR AND HYPERREF
+%----------------------------------------------------------------------------------------
+\definecolor{linkcolour}{HTML}{4e2a84}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%----------------------------------------------------------------------------------------
+% CUSTOM SECTION FORMATTING
+%----------------------------------------------------------------------------------------
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%----------------------------------------------------------------------------------------
+% CUSTOM ENVIRONMENTS
+%----------------------------------------------------------------------------------------
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+%----------------------------------------------------------------------------------------
+% CUSTOM COLUMN TYPE
+%----------------------------------------------------------------------------------------
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
