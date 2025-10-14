@@ -54,8 +54,17 @@
   Scale = 1.05
 ]{Montserrat}
 
+
+\newfontfamily\names[
+  Path = fonts/Montserrat/static/,
+  UprightFont = *-SemiBold,
+  BoldFont = *-Bold,
+  ItalicFont = *-SemiBoldItalic,
+  Scale = 1.05
+]{Montserrat}
+
 % --- Command for name font ---
-\newcommand{\namefont}{\headingfont\fontsize{28pt}{32pt}\selectfont}
+\newcommand{\namefont}{\names\fontsize{28pt}{32pt}\selectfont}
 %----------------------------------------------------------------------------------------
 % SPACING & DESIGN ADJUSTMENTS
 %----------------------------------------------------------------------------------------
