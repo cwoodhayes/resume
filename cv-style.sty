@@ -100,14 +100,13 @@
 \newenvironment{joblong}[2]
 {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3pt]
+        \textbf{#1} & \hfill & #2 \\[3pt]
     \end{tabularx}
+    \vspace{0.1em}  % adjust this value as needed
     \begin{minipage}[t]{\linewidth}
-    \begin{itemize}
 }
 {
-    \end{itemize}
-    \end{minipage}    
+    \end{minipage}
 }
 
 %----------------------------------------------------------------------------------------
