@@ -3,3 +3,4 @@ cv.*
 xelatex32230.fls
 .vscode
 notes/*
+*.fls
