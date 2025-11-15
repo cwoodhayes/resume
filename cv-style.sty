@@ -101,18 +101,24 @@
 {
 }
 
-% args are: company, role, timing
+\usepackage{tabularx}  % make sure this is loaded
+
 \newenvironment{joblong}[3]
 {
+    % Header row: job title, company/date, etc.
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
         \textbf{#1} | \textit{#2} & \hfill & #3 \\[3pt]
     \end{tabularx}
-    \vspace{0.1em}  % adjust this value as needed
+    \vspace{0.1em}  % spacing before the bullet points
     \begin{minipage}[t]{\linewidth}
+    \begin{itemize}  % start bullet points
+        \setlength\itemsep{0.0em}  % optional: adjust spacing between bullets
 }
 {
+    \end{itemize}   % end bullet points
     \end{minipage}
 }
+
 
 %----------------------------------------------------------------------------------------
 % CUSTOM COLUMN TYPE
