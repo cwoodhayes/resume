@@ -2,3 +2,4 @@ cv.*
 !cv.tex
 xelatex32230.fls
 .vscode
+notes/*
