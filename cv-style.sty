@@ -105,6 +105,7 @@
 
 \newenvironment{joblong}[3]
 {
+    % org, title, date
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
         \textbf{#1} | \textit{#2} & \hfill & #3 
     \end{tabularx}%
@@ -117,6 +118,14 @@
 }
 {
     \end{itemize}
+}
+
+\newenvironment{award}[3]
+{
+    % grantee, award, date
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+        \textbf{#1} | \textit{#2} & \hfill & #3 
+    \end{tabularx}%
 }
 
 
