@@ -120,6 +120,17 @@
     \end{itemize}
 }
 
+\newenvironment{education}[3]%
+{%
+    % Header
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+        \textbf{#1} -- \textit{#2} & & #3 \\
+    \end{tabularx}
+    \itshape % italicize the body
+}%
+{\par}%
+
+
 \newenvironment{award}[3]
 {
     % grantee, award, date
