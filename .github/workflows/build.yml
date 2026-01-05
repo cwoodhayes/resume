@@ -15,7 +15,7 @@ jobs:
       - name: Install TeX Live and fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-xetex texlive-luatex texlive-latex-extra texlive-bibtex-extra biber fonts-noto-core
+          sudo apt-get install -y texlive-xetex texlive-luatex texlive-latex-extra texlive-bibtex-extra texlive-fonts-recommended texlive-fonts-extra biber fonts-noto-core
       - name: Build with XeLaTeX
         run: |
           cd ${{ env.DIR }}
