@@ -130,6 +130,14 @@
 }%
 {\par}%
 
+\newenvironment{educationshort}[3]%
+{%
+    % Header
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+        \textbf{#1} -- \textit{#2} & & #3 \\
+    \end{tabularx}
+}%
+
 
 \newenvironment{award}[3]
 {
