@@ -27,8 +27,11 @@
 %----------------------------------------------------------------------------------------
 % COLOR AND HYPERREF
 %----------------------------------------------------------------------------------------
-\definecolor{linkcolour}{HTML}{4e2a84}
-\definecolor{titlecolor}{HTML}{333344}
+% \definecolor{linkcolour}{HTML}{4e2a84}
+% \definecolor{titlecolor}{HTML}{333344}
+% removing colors per matt's advice:
+\definecolor{linkcolour}{HTML}{000000}
+\definecolor{titlecolor}{HTML}{000000}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
@@ -78,7 +81,7 @@
 
 % Section title style
 \titleformat{\section}
-  {\Large\scshape\color{linkcolour}\headingfont\raggedright}
+  {\large\scshape\color{linkcolour}\headingfont\raggedright}
   {}{0em}{}[{\color{linkcolour}\titlerule}]
 \titlespacing{\section}{0pt}{5pt}{5pt}
 
