@@ -100,11 +100,19 @@
 %----------------------------------------------------------------------------------------
 \newenvironment{jobshort}[2]
 {
+    % title, date
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3pt]
-    \end{tabularx}
+        \textbf{#1} & \hfill & #2 
+    \end{tabularx}%
+    \vspace{-0.4em} % <--- adjust this value to control spacing
+    \begin{itemize}
+        \setlength\itemsep{0em}
+        \setlength\topsep{0pt}
+        \setlength\partopsep{0pt}
+        \setlength\parsep{0pt}
 }
 {
+    \end{itemize}
 }
 
 \usepackage{tabularx}  % make sure this is loaded
