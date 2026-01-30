@@ -98,11 +98,11 @@
 %----------------------------------------------------------------------------------------
 % CUSTOM ENVIRONMENTS
 %----------------------------------------------------------------------------------------
-\newenvironment{jobshort}[2]
+\newenvironment{jobshort}[3]
 {
     % title, date
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-        \textbf{#1} & \hfill & #2 
+        \textbf{#1} \textit{#2} & \hfill & #3
     \end{tabularx}%
     \vspace{-0.4em} % <--- adjust this value to control spacing
     \begin{itemize}
