@@ -145,28 +145,29 @@
 %	PROJECTS 
 %----------------------------------------------------------------------------------------
 \section{Projects}
-\begin{jobshort}{PolyUMI --- Visual-Tactile Data Collector for Dextrous Manipulation Imitation Learning}{}{Jan-Mar 2026}
+\begin{jobshort}{PolyUMI (\textbf{CR2 @ ICRA 2026})--- Visual-Tactile Data Collector for Dextrous Manipulation Imitation Learning}{}{Jan-Mar 2026}
     \item Designed \& built wireless handheld grasping data collector (based on \href{https://umi-gripper.github.io}{UMI}) with novel sensor array 
     including \href{https://polytouch.alanz.info}{optical tactile sensor}.
-    \item Developed data extraction, cleaning, SLAM, and visualization pipeline (Python, ROS 2) to support training diffusion policies.
+    \item Developed training, inference, and visualization pipeline (Python, ROS 2) for multimodal diffusion policy on 7DoF arm.
     % \item Created motion mimicry demo for Franka Panda 7DoF arm that replays PolyUMI trajectories as derived from ORB-SLAM3.
 \end{jobshort}
-% \vspace{-1.3em}
 
 \begin{jobshort}{HANDyDriver v3 --- High-Performance BLDC Motor Controller for Dextrous Hands}{}{Apr-Aug 2026}
     \item Designed \& validated 3rd-gen PCB for 2A, 48V BLDC motor control (KiCAD), shrinking board size and adding support for EtherCAT.
-    \item Ported field-oriented control (FOC) library from Arduino to Zephyr RTOS on dual-core NXP MCU, for 10kHz control of 3 motors.
+    \item Ported field-oriented control (FOC) library from Arduino to Zephyr RTOS on dual-core NXP MCU, for 10kHz control of 3 motors (C++).
 \end{jobshort}
+\vspace{-1.3em}
 
 \begin{jobshort}{LeHome Challenge 2026 --- Vision-Language-Action (VLA) Model for Bimanual Garment Folding}{}{Jan-Mar 2026}
-    \item Trained 2 SO-101 arms to fold laundry using VLA (LeRobot SmolVLA) fine-tuned on teleoperation data in Isaac Sim.
-    \item Generated diverse synthetic training data with domain randomization + data augmentation (NVIDIA Cosmos, Python).
+    \item Led team of 7 to place in top 25 of 250+ teams in global competition to train 2 SO-101 arms to fold laundry, with 53\% task success.
+    \item Trained and evaluated various models (SmolVLA, X-VLA, Lingbot, DP, ACT) with augmented teleop data in Isaac Sim environment.
+    % \item Generated diverse synthetic training data with domain randomization + data augmentation (NVIDIA Cosmos, Python).
 \end{jobshort}
 % \vspace{-1.3em}
 
 \begin{jobshort}{Simultaneous Localization and Mapping (SLAM) from Scratch}{}{Jan-Mar 2026}
     \item Designed, developed, \& deployed from-scratch Extended Kalman Filter (EKF) LiDAR SLAM pipeline for Turtlebot3 (ROS2, C++).
-    \item Implemented custom RViz-based simulation environment to test diff-drive control, odometry, and lidar algorithms.
+    \item Implemented custom RViz-based simulation environment to test kinematics, control, data-association, and SLAM algorithms.
 \end{jobshort}
 % \vspace{-1.3em}
 
@@ -195,7 +196,7 @@
     (Matlab) for custom avionics system.
     % \item Designed, tested, and hand-assembled avionics boards robust enough to operate in desert + space + high-G environments.
     % \item Co-designed launch procedures coordinating 100+ engineers in remote desert environment, resulting in a successful launch.
-    \item Debugged electrical, software, and radio issues in harsh environments under time constraints, leading to successful space launch.
+    % \item Debugged electrical, software, and radio issues in harsh environments under time constraints, leading to successful space launch.
     % \item Wrote still-in-use \href{https://github.com/cwoodhayes/FlashLog-archive}{software} providing fault+radiation-tolerant telemetry storage on a NOR flash memory chip.
     % \item Kicked off lab-wide cultural reform after handling an internal harassment case to help the lab be a safer space for young engineers.
 \end{jobshort}
